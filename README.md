@@ -1,5 +1,22 @@
 # Nexmosphere RFID (Lift & Learn) Python Reader
 
+## Next.js Interactive Exhibit
+
+This repository now includes **Object Atlas**, a visitor-facing smart-table demo built with Next.js. It contains four sample objects, animated object stories, a curator control panel, simulated RFID events, and direct Web Serial support.
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000), then use **Demo Controls** to simulate a tag pickup or connect a Nexmosphere controller at `115200` baud. Web Serial requires Chrome or Edge and a secure context (`localhost` is supported).
+
+The interface understands the same messages as the Python reader:
+
+- `XR[PU001]` — reveal the content for object 1
+- `XR[PB001]` — return to the idle screen
+- Tag IDs `001` through `004` map to the included demo objects
+
 This project demonstrates how to communicate with a Nexmosphere RFID Lift & Learn sensor using Python. 
 
 The script listens to the serial port and detects when an RFID-tagged object is:

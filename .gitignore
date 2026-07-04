@@ -147,3 +147,19 @@ cython_debug/
 # IDE settings
 .vscode/
 .idea/
+
+# dependencies
+/node_modules
+
+# Next.js build output
+/.next
+/out
+
+# local files
+.DS_Store
+*.log
+.env*.local
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
